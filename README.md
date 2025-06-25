@@ -1,12 +1,41 @@
-# React + Vite
+# 3Wallet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal multi-chain web3 wallet demo built with React, supporting both Ethereum and Solana wallets.  
+Generate a seed phrase, create wallets, and view/send/receive addresses—all in a clean, modern UI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Generate and hide/show a BIP39 seed phrase
+- Create multiple Ethereum and Solana wallets from the same seed
+- View wallet addresses
+- Demo "Send" and "Receive" actions for each wallet
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Install dependencies:**
+   ```
+   npm install
+   ```
+
+2. **Run the app:**
+   ```
+   npm run dev
+   ```
+
+3. **Open in your browser:**  
+   Visit [http://localhost:port](http://localhost:port) to see the app in action.
+
+## Tech Stack
+
+- React
+- Vite
+- bip39, ethers, @solana/web3.js
+
+## Notes
+
+- This is a demo. The "Send" feature only shows a prompt/alert and does not broadcast real transactions.
+- For educational and testing purposes only.
+
+---
+## License
+MIT
